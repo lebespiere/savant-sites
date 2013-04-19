@@ -1,14 +1,20 @@
+.slider {
+  position:relative;
+  overflow:hidden;
+}
+
+.slider input[name=slides] {
+  display:none !important;
+}
+
 /* TODO add prefixes for -moz, -o and -ie*/
 @media screen and (min-width:961px) {
 
-  .slider {
-    position:relative;
-    overflow:hidden;
-  }
-
-  #cx-hero .slides-3 {
+  #cx-hero .slides {
     height:420px;
   }
+
+  /* Base slides */
 
   .slider .slide {
     position:absolute;
@@ -16,21 +22,6 @@
     top:0;
     width:100%;
     box-sizing:border-box;
-  }
-
-  .slider:hover .slides-3 {
-    -webkit-animation-play-state:paused;
-  }
-
-  .slider:hover::after {
-    content:"";
-    position:absolute;
-    top:8px;
-    right:8px;
-    border-radius:6px;
-    background:url(/img/glyph/32-inv/pause.png) center center no-repeat rgba(0,0,0,.25);
-    width:32px;
-    height:32px
   }
 
   .slider .slide:nth-of-type(1) {
@@ -45,9 +36,11 @@
     left:200%;
   }
 
-  .slider .slides-3 {
+  /* Slides animation */
+
+  .slider-3 .slides {
     position:relative;
-    -webkit-animation: slides-3 36s ease-in infinite;
+    -webkit-animation: slides-3 15s ease-in infinite;
   }
 
   @-webkit-keyframes slides-3 {
@@ -57,6 +50,117 @@
     64% {left:-100%;}
     66% {left:-200%;}
     98% {left:-200%;}
+  }
+
+  /* Navigation */
+
+  .slider .nav {
+    position:absolute;
+    height:32px;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align:center;
+  }
+
+  .slider .nav label {
+    display:inline-block;
+    background:rgba(0,0,0,.2);
+    box-shadow:0 1px 1px rgba(0,0,0,.6) inset,
+               0 1px 1px rgba(255,255,255,.25);
+    width:12px;
+    height:12px;
+    margin:0 4px;
+    border-radius:32px;
+    cursor:pointer;
+  }
+
+
+  #slide-switch-1:checked ~ .slides {
+    left:0;
+  }
+
+  #slide-switch-2:checked ~ .slides {
+    left:-100%;
+  }
+
+  #slide-switch-3:checked ~ .slides {
+    left:-200%;
+  }
+
+  .slider input[name=slides]:checked ~ .slides,
+  .slider input[name=slides]:checked ~ .nav label {
+    -webkit-animation:none;
+  }
+
+  .slider input[name=slides]:checked ~ .pause {
+    display:block;
+  }
+
+  #slide-switch-1:checked ~ .nav label:nth-of-type(1) {
+    background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.6);
+  }
+
+  #slide-switch-2:checked ~ .nav label:nth-of-type(2) {
+    background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.6);
+  }
+
+  #slide-switch-3:checked ~ .nav label:nth-of-type(3) {
+    background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.6);
+  }
+
+  /* Navigation animation */
+
+  .slider .nav label:nth-of-type(1) {
+    -webkit-animation-delay:0s;
+  }
+
+  .slider .nav label:nth-of-type(2) {
+    -webkit-animation-delay:5s;
+  }
+
+  .slider .nav label:nth-of-type(3) {
+    -webkit-animation-delay:10s;
+  }
+
+  .slider-3 .nav label {
+    -webkit-animation: nav-3 15s linear infinite;
+  }
+
+  @-webkit-keyframes nav-3 {
+    0% {
+      background:#fff;
+    }
+    33% {
+      background:rgba(0,0,0,.2);
+    }
+  }
+
+  /* Pause on hover */
+
+  .slider .pause {
+    content:"";
+    position:absolute;
+    display:none;
+    top:8px;
+    right:8px;
+    border-radius:6px;
+    background:url(/img/glyph/32-inv/pause.png) center center no-repeat rgba(0,0,0,.25);
+    width:32px;
+    height:32px;
+    z-index:10;
+  }
+
+  .slider:hover .slides,
+  .slider:hover .nav label {
+    -webkit-animation-play-state:paused;
+  }
+
+  .slider:hover .pause {
+    display:block;
   }
 
 }

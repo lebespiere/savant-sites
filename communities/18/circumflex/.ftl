@@ -3,9 +3,21 @@
 
 [#assign main]
 
-<div id="cx-hero"
-     class="panel hero slider blueprint">
-  <div class="slides-3">
+<form id="cx-hero"
+      class="panel hero slider slider-3 blueprint">
+  <input id="slide-switch-1"
+         name="slides"
+         type="radio"/>
+  <input id="slide-switch-2"
+         name="slides"
+         type="radio"/>
+  <input id="slide-switch-3"
+         name="slides"
+         type="radio"/>
+  <a href="javascript:;"
+     class="reset pause">
+  </a>
+  <div class="slides">
     <div class="content-box slide">
       [#include "slides/stack.p.ftl"/]
     </div>
@@ -16,7 +28,12 @@
       [#include "slides/economy.p.ftl"/]
     </div>
   </div>
-</div>
+  <div class="nav">
+    <label for="slide-switch-1"></label>
+    <label for="slide-switch-2"></label>
+    <label for="slide-switch-3"></label>
+  </div>
+</form>
 
 <h1 class="section-title white">Быстрый старт</h1>
 <div class="letterbox">
