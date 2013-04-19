@@ -5,7 +5,7 @@
 </h1>
 <div class="row content-output">
   <div class="span-4">
-    <div class="frame pad round">
+    <div class="frame pad round margin-top">
       <h3>Web Framework</h3>
       <p>
         Структурированный и легковесный фреймворк
@@ -22,7 +22,7 @@
     </div>
   </div>
   <div class="span-4">
-    <div class="frame pad round">
+    <div class="frame pad round margin-top">
       <h3>ORM и XML</h3>
       <p>
         DSL-фреймворки для работы с реляционными
@@ -39,7 +39,7 @@
     </div>
   </div>
   <div class="span-4">
-    <div class="frame pad round">
+    <div class="frame pad round margin-top">
       <h3>Markeven</h3>
       <p>
         Сверхпроизводительный и гибкий язык

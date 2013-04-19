@@ -4,9 +4,8 @@
 [#assign main]
 
 <div id="cx-hero"
-     class="panel hero">
-  <div class="slider slider-3"
-       style="height:420px">
+     class="panel hero slider blueprint">
+  <div class="slides-3">
     <div class="content-box slide">
       [#include "slides/stack.p.ftl"/]
     </div>

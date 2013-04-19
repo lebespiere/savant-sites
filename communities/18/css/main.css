@@ -154,7 +154,6 @@
 }
 
 #cx-hero {
-  background: url("/img/misc/blueprint.png") repeat #26c;
   box-shadow: 0 1px 0 rgba(255,255,255,.2),
   0 1px 3px rgba(0,0,0,.4) inset;
 }
@@ -184,6 +183,10 @@
     margin: 0 -48px;
   }
 
+}
+
+.blueprint {
+  background: url("/img/misc/blueprint.png") repeat #26c;
 }
 
 h1, .content-output h1 {
