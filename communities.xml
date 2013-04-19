@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<communities>
+  <community id="2">
+    <title><![CDATA[Circumflex — Application Framework for Scala]]></title>
+    <short-title><![CDATA[Circumflex]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/02/static/icon.png?1343235976000]]></icon>
+    <base-href><![CDATA[http://circumflex.savant.pro]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/2]]></secure-base-href>
+  </community>
+  <community id="17">
+    <title><![CDATA[PayPerProfits]]></title>
+    <short-title><![CDATA[PayPerProfits]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0h/static/icon.png?1353760097000]]></icon>
+    <base-href><![CDATA[http://savant.pro/community/17]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/17]]></secure-base-href>
+  </community>
+  <community id="1">
+    <title><![CDATA[SAVANT.PRO Community]]></title>
+    <short-title><![CDATA[SAVANT.PRO]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/01/static/icon.png?1363073797000]]></icon>
+    <base-href><![CDATA[http://ru.savant.pro]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/1]]></secure-base-href>
+  </community>
+  <community id="13">
+    <title><![CDATA[Sandbox community]]></title>
+    <short-title><![CDATA[Sandbox]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0d/static/icon.png?1355472978000]]></icon>
+    <base-href><![CDATA[http://savant.pro/community/13]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/13]]></secure-base-href>
+  </community>
+  <community id="18">
+    <title><![CDATA[Академия Scala + Circumflex — профессиональное обучение и сертификация разработчиков и IT-специалистов]]></title>
+    <short-title><![CDATA[Scala + Circumflex]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0i/static/icon.png?1363961676000]]></icon>
+    <base-href><![CDATA[http://scalacademy.ru]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/18]]></secure-base-href>
+  </community>
+  <community id="11">
+    <title><![CDATA[Высшая школа корпоративного управления РАНХиГС]]></title>
+    <short-title><![CDATA[ВШКУ РАНХиГС]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0b/static/icon.png?1353594944000]]></icon>
+    <base-href><![CDATA[http://gscm.ru]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/11]]></secure-base-href>
+  </community>
+  <community id="10">
+    <title><![CDATA[Донской государственный технический университет кафедра “Управление и технологическое предпринимательство&quot; Центра развития бизнеса и инновационных технологий]]></title>
+    <short-title><![CDATA[кафедра УиТП ДГТУ (ЦРБИТ)]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0a/static/icon.png?1355058161000]]></icon>
+    <base-href><![CDATA[http://savant.pro/community/10]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/10]]></secure-base-href>
+  </community>
+  <community id="19">
+    <title><![CDATA[Клинский институт охраны и условий труда]]></title>
+    <short-title><![CDATA[Клинский институт охраны и условий труда]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0j/static/icon.png?1363346470000]]></icon>
+    <base-href><![CDATA[http://edu.trudcontrol.ru]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/19]]></secure-base-href>
+  </community>
+  <community id="16">
+    <title><![CDATA[Новая школа муниципального управления]]></title>
+    <short-title><![CDATA[Муниципал+]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0g/static/icon.png?1365503625000]]></icon>
+    <base-href><![CDATA[http://nslg.ru]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/16]]></secure-base-href>
+  </community>
+  <community id="22">
+    <title><![CDATA[Отдел адаптации, оценки, развития и обучения ООО &quot;ГК Хамина&quot;]]></title>
+    <short-title><![CDATA[Образовательная система Хамина]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0m/static/icon.png?1365669648000]]></icon>
+    <base-href><![CDATA[http://savant.pro/community/22]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/22]]></secure-base-href>
+  </community>
+  <community id="20">
+    <title><![CDATA[Персональный сайт Аксёнова Сергея Леонидовича]]></title>
+    <short-title><![CDATA[Аксёнов С.Л.]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0k/static/icon.png?1363177341000]]></icon>
+    <base-href><![CDATA[http://savant.pro/community/20]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/20]]></secure-base-href>
+  </community>
+  <community id="14">
+    <title><![CDATA[Региональный Финансово-Экономический Техникум]]></title>
+    <short-title><![CDATA[РФЭТ]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0e/static/icon.png?1355473596000]]></icon>
+    <base-href><![CDATA[http://savant.pro/community/14]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/14]]></secure-base-href>
+  </community>
+  <community id="3">
+    <title><![CDATA[Региональный финансово-экономический институт: Бизнес-Школа Информационных Технологий]]></title>
+    <short-title><![CDATA[РФЭИ/ИТ]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/03/static/icon.png?1363695856000]]></icon>
+    <base-href><![CDATA[http://it.rfei.ru]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/3]]></secure-base-href>
+  </community>
+  <community id="15">
+    <title><![CDATA[Совет молодых учёных РФЭИ]]></title>
+    <short-title><![CDATA[СМУ РФЭИ]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0f/static/icon.png?1352981411000]]></icon>
+    <base-href><![CDATA[http://smu.rfei.ru]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/15]]></secure-base-href>
+  </community>
+  <community id="21">
+    <title><![CDATA[Школа Юного Бизнесмена Аксёнова]]></title>
+    <short-title><![CDATA[ШЮБА]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0l/static/icon.png?1363174966000]]></icon>
+    <base-href><![CDATA[http://shubaks.ru]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/21]]></secure-base-href>
+  </community>
+  <community id="12">
+    <title><![CDATA[Школа бизнеса Аксёнова]]></title>
+    <short-title><![CDATA[ШБА]]></short-title>
+    <icon><![CDATA[http://cdn.savant.pro/home/communities/00/00/00/0c/static/icon.png?1351684578000]]></icon>
+    <base-href><![CDATA[http://shbaks.ru]]></base-href>
+    <secure-base-href><![CDATA[https://secure.savant.pro/community/12]]></secure-base-href>
+  </community>
+</communities>
