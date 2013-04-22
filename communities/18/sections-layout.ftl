@@ -7,7 +7,7 @@
   </a>
 </div>
 <div id="sections-header"
-     class="panel">
+     class="panel panel-glass border-top border-bottom">
   <a id="section-scala"
      href="/scala"
      title="Язык программирования Scala">

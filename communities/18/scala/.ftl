@@ -10,14 +10,14 @@
     Лидеры сделали свой выбор
   </h1>
   <div class="row">
-    <div class="span-6">
+    <div class="span-5">
       <p>
         Ведущие мировые IT-компании используют Scala в качестве
         серверной платформы для построения высоконагруженных
         и отказоустойчивых сервисов.
       </p>
       <p class="kicker">
-        Начните обучение сегодня.
+        Изучайте Scala — инвестируйте в свое будущее.
       </p>
       <div class="centered">
         <a href="/learning"
@@ -28,7 +28,7 @@
         </a>
       </div>
     </div>
-    <div class="span-6 centered">
+    <div class="span-7 centered">
       <img src="${prefix}/270c5112-e985-4ff5-a95d-2b309bc0f7a8.png"/>
     </div>
   </div>

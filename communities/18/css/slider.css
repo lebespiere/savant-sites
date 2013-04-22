@@ -21,6 +21,7 @@
     -moz-transition: left .5s linear;
     -o-transition: left .5s linear;
     transition: left .5s linear;
+    -webkit-perspective:600;
   }
 
   .slider .slide {
@@ -54,7 +55,6 @@
     -moz-animation: slides3 24s linear infinite;
     -o-animation: slides3 24s linear infinite;
     animation: slides3 24s linear infinite;
-    -webkit-animation-fill-mode: none;
   }
 
   .slider-4 .slides {
@@ -62,7 +62,6 @@
     -moz-animation: slides4 32s linear infinite;
     -o-animation: slides4 32s linear infinite;
     animation: slides4 32s linear infinite;
-    -webkit-animation-fill-mode: none;
   }
 
   /* Navigation */
@@ -165,7 +164,6 @@
     -o-animation: nav3 24s linear infinite;
     -ie-animation: nav3 24s linear infinite;
     animation: nav3 24s linear infinite;
-    -webkit-animation-fill-mode: none;
   }
 
   .slider-4 .nav label {
@@ -174,7 +172,6 @@
     -o-animation: nav4 32s linear infinite;
     -ie-animation: nav4 32s linear infinite;
     animation: nav4 32s linear infinite;
-    -webkit-animation-fill-mode: none;
   }
 
   /* Pause on hover */

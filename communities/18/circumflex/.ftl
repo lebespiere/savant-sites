@@ -2,8 +2,7 @@
 [#assign prefix = "http://cdn.savant.pro/home/communities/00/00/00/0i/static/img"/]
 
 [#assign main]
-
-<form id="cx-hero"
+<div id="cx-hero"
       class="panel hero slider slider-4 blueprint">
   <input id="slide-switch-1"
          name="slides"
@@ -47,7 +46,7 @@
     <label for="slide-switch-3"></label>
     <label for="slide-switch-4"></label>
   </div>
-</form>
+</div>
 
 <h1 class="section-title white">Быстрый старт</h1>
 <div class="letterbox">

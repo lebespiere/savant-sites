@@ -94,35 +94,20 @@
 }
 
 /* Common sections header */
-
 #sections-header {
-  margin-bottom:8px;
+  font-size:0;
 }
 
 #sections-header a {
-  display: inline-block;
-  text-decoration:none;
-  color:#fff;
   text-align:center;
-  font-size:24px;
+  font-size:20px;
   padding: 4px 8px;
-  border-radius:6px;
-}
-
-#sections-header a * {
-  vertical-align: middle;
-}
-
-#sections-header a.active {
-  background:rgba(0,0,0,.1);
-  box-shadow: 0 1px 1px rgba(255,255,255,.25),
-  0 1px 1px rgba(0,0,0,.4) inset;
 }
 
 @media screen and (max-width: 768px) {
 
   #sections-header a {
-    width:120px;
+    width:96px;
   }
 
   #sections-header a span {
@@ -131,6 +116,36 @@
   }
 
 }
+
+/* Glass panels */
+
+.panel-glass {
+  border-top-color: rgba(0,0,0,.33) !important;
+  border-bottom-color: rgba(0,0,0,.5) !important;
+  box-shadow:0 0 1px rgba(0,0,0,.5);
+  background:rgba(255,255,255,.2)
+  url(/img/ui/noise.png) repeat;
+  overflow:hidden;
+}
+
+.panel-glass a {
+  display: inline-block;
+  text-decoration:none;
+  color:#fff;
+  text-shadow:0 1px 1px rgba(0,0,0,.5);
+  border-right: 1px solid rgba(255,255,255,.33);
+  box-shadow: 1px 0 0 rgba(0,0,0,.2);
+}
+
+.panel-glass a * {
+  vertical-align: middle;
+}
+
+.panel-glass a.active {
+  background:rgba(0,0,0,.15);
+  box-shadow: 0 1px 5px rgba(0,0,0,.25) inset;
+}
+
 
 /* Hero units */
 
@@ -171,8 +186,8 @@
 }
 
 #scala-hero {
-  box-shadow: 0 1px 0 rgba(255,255,255,.2),
-  0 1px 3px rgba(0,0,0,.6) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,.25),
+  0 1px 1px rgba(0,0,0,.25) inset;
 }
 
 /* Commons */
