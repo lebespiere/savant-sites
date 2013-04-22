@@ -95,11 +95,11 @@
 
 /* Common sections header */
 
-.sections-header {
+#sections-header {
   margin-bottom:8px;
 }
 
-.sections-header a {
+#sections-header a {
   display: inline-block;
   text-decoration:none;
   color:#fff;
@@ -109,11 +109,11 @@
   border-radius:6px;
 }
 
-.sections-header a * {
+#sections-header a * {
   vertical-align: middle;
 }
 
-.sections-header a.active {
+#sections-header a.active {
   background:rgba(0,0,0,.1);
   box-shadow: 0 1px 1px rgba(255,255,255,.25),
   0 1px 1px rgba(0,0,0,.4) inset;
@@ -121,11 +121,11 @@
 
 @media screen and (max-width: 768px) {
 
-  .sections-header a {
+  #sections-header a {
     width:120px;
   }
 
-  .sections-header a span {
+  #sections-header a span {
     display:block;
     margin:8px 0;
   }
@@ -153,6 +153,10 @@
   line-height:32px;
 }
 
+.hero img {
+  max-width:100%;
+}
+
 #cx-hero {
   box-shadow: 0 1px 0 rgba(255,255,255,.2),
   0 1px 3px rgba(0,0,0,.4) inset;
@@ -174,13 +178,15 @@
 /* Commons */
 
 .panel {
-  margin: 0 -8px;
+  margin-left:-8px;
+  margin-right:-8px;
 }
 
 @media screen and (min-width:961px) {
 
   .panel {
-    margin: 0 -48px;
+    margin-left:-48px;
+    margin-right:-48px;
   }
 
 }

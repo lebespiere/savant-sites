@@ -4,7 +4,7 @@
 [#assign main]
 
 <form id="cx-hero"
-      class="panel hero slider slider-3 blueprint">
+      class="panel hero slider slider-4 blueprint">
   <input id="slide-switch-1"
          name="slides"
          type="radio"/>
@@ -14,31 +14,45 @@
   <input id="slide-switch-3"
          name="slides"
          type="radio"/>
-  <a href="javascript:;"
-     class="reset pause">
-  </a>
+  <input id="slide-switch-4"
+         name="slides"
+         type="radio"/>
+  <div class="pause">
+  </div>
   <div class="slides">
-    <div class="content-box slide">
-      [#include "slides/stack.p.ftl"/]
+    <div class="slide">
+      <div class="content-box">
+        [#include "slides/stack.p.ftl"/]
+      </div>
     </div>
-    <div class="content-box slide">
-      [#include "slides/effectiveness.p.ftl"/]
+    <div class="slide">
+      <div class="content-box">
+        [#include "slides/effectiveness.p.ftl"/]
+      </div>
     </div>
-    <div class="content-box slide">
-      [#include "slides/economy.p.ftl"/]
+    <div class="slide">
+      <div class="content-box">
+        [#include "slides/economy.p.ftl"/]
+      </div>
+    </div>
+    <div class="slide">
+      <div class="content-box">
+        [#include "slides/libraries.p.ftl"/]
+      </div>
     </div>
   </div>
   <div class="nav">
     <label for="slide-switch-1"></label>
     <label for="slide-switch-2"></label>
     <label for="slide-switch-3"></label>
+    <label for="slide-switch-4"></label>
   </div>
 </form>
 
 <h1 class="section-title white">Быстрый старт</h1>
 <div class="letterbox">
   <div class="wrap content-box content-output rich-links round-bottom">
-    [#include "/circumflex/quick-start.p.ftl"/]
+    [#include "quick-start.p.ftl"/]
   </div>
 </div>
 
@@ -48,7 +62,7 @@
     <h1 class="section-title white">Документация</h1>
     <div class="letterbox">
       <div class="wrap content-box content-output rich-links round-bottom">
-        [#include "/circumflex/docco.p.ftl"/]
+        [#include "docco.p.ftl"/]
       </div>
     </div>
   </div>
@@ -57,7 +71,7 @@
     <h1 class="section-title white">Обучение</h1>
     <div class="letterbox">
       <div class="wrap content-box content-output rich-links round-bottom">
-        [#include "/circumflex/learning.p.ftl"/]
+        [#include "learning.p.ftl"/]
       </div>
     </div>
   </div>

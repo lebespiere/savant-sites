@@ -15,7 +15,7 @@
         <a href="/circumflex/web"
            class="btn primary inverse">
           <img class="glyph"
-               src="/img/glyph/32-inv/antenna.png"/>
+               src="/img/glyph/32-inv/share.png"/>
           <span>Подробнее</span>
         </a>
       </p>

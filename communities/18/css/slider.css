@@ -7,7 +7,6 @@
   display:none !important;
 }
 
-/* TODO add prefixes for -moz, -o and -ie*/
 @media screen and (min-width:961px) {
 
   #cx-hero .slides {
@@ -15,6 +14,14 @@
   }
 
   /* Base slides */
+
+  .slider .slides {
+    position:relative;
+    -webkit-transition: left .5s linear;
+    -moz-transition: left .5s linear;
+    -o-transition: left .5s linear;
+    transition: left .5s linear;
+  }
 
   .slider .slide {
     position:absolute;
@@ -36,21 +43,26 @@
     left:200%;
   }
 
+  .slider .slide:nth-of-type(4) {
+    left:300%;
+  }
+
   /* Slides animation */
 
   .slider-3 .slides {
-    position:relative;
-    -webkit-transition:left .5s ease-in;
-    -webkit-animation: slides-3 24s ease-in infinite;
+    -webkit-animation: slides3 24s linear infinite;
+    -moz-animation: slides3 24s linear infinite;
+    -o-animation: slides3 24s linear infinite;
+    animation: slides3 24s linear infinite;
+    -webkit-animation-fill-mode: none;
   }
 
-  @-webkit-keyframes slides-3 {
-    0% {left:0;}
-    31% {left:0;}
-    33% {left:-100%;}
-    64% {left:-100%;}
-    66% {left:-200%;}
-    98% {left:-200%;}
+  .slider-4 .slides {
+    -webkit-animation: slides4 32s linear infinite;
+    -moz-animation: slides4 32s linear infinite;
+    -o-animation: slides4 32s linear infinite;
+    animation: slides4 32s linear infinite;
+    -webkit-animation-fill-mode: none;
   }
 
   /* Navigation */
@@ -68,14 +80,13 @@
     display:inline-block;
     background:rgba(0,0,0,.2);
     box-shadow:0 1px 1px rgba(0,0,0,.6) inset,
-               0 1px 1px rgba(255,255,255,.25);
+    0 1px 1px rgba(255,255,255,.25);
     width:12px;
     height:12px;
     margin:0 4px;
     border-radius:32px;
     cursor:pointer;
   }
-
 
   #slide-switch-1:checked ~ .slides {
     left:0;
@@ -89,26 +100,27 @@
     left:-200%;
   }
 
+  #slide-switch-4:checked ~ .slides {
+    left:-300%;
+  }
+
   .slider input[name=slides]:checked ~ .slides,
   .slider input[name=slides]:checked ~ .nav label {
     -webkit-animation:none;
+    -moz-animation:none;
+    -o-animation:none;
+    -ie-animation:none;
+    animation:none;
   }
 
   .slider input[name=slides]:checked ~ .pause {
     display:block;
   }
 
-  #slide-switch-1:checked ~ .nav label:nth-of-type(1) {
-    background:#fff;
-    box-shadow:0 1px 3px rgba(0,0,0,.6);
-  }
-
-  #slide-switch-2:checked ~ .nav label:nth-of-type(2) {
-    background:#fff;
-    box-shadow:0 1px 3px rgba(0,0,0,.6);
-  }
-
-  #slide-switch-3:checked ~ .nav label:nth-of-type(3) {
+  #slide-switch-1:checked ~ .nav label:nth-of-type(1),
+  #slide-switch-2:checked ~ .nav label:nth-of-type(2),
+  #slide-switch-3:checked ~ .nav label:nth-of-type(3),
+  #slide-switch-4:checked ~ .nav label:nth-of-type(4) {
     background:#fff;
     box-shadow:0 1px 3px rgba(0,0,0,.6);
   }
@@ -117,27 +129,52 @@
 
   .slider .nav label:nth-of-type(1) {
     -webkit-animation-delay:0s;
+    -moz-animation-delay:0s;
+    -o-animation-delay:0s;
+    -ie-animation-delay:0s;
+    animation-delay:0s;
   }
 
   .slider .nav label:nth-of-type(2) {
     -webkit-animation-delay:8s;
+    -moz-animation-delay:8s;
+    -o-animation-delay:8s;
+    -ie-animation-delay:8s;
+    animation-delay:8s;
   }
 
   .slider .nav label:nth-of-type(3) {
     -webkit-animation-delay:16s;
+    -moz-animation-delay:16s;
+    -o-animation-delay:16s;
+    -ie-animation-delay:16s;
+    animation-delay:16s;
+  }
+
+  .slider .nav label:nth-of-type(4) {
+    -webkit-animation-delay:24s;
+    -moz-animation-delay:24s;
+    -o-animation-delay:24s;
+    -ie-animation-delay:24s;
+    animation-delay:24s;
   }
 
   .slider-3 .nav label {
-    -webkit-animation: nav-3 24s step-end infinite;
+    -webkit-animation: nav3 24s linear infinite;
+    -moz-animation: nav3 24s linear infinite;
+    -o-animation: nav3 24s linear infinite;
+    -ie-animation: nav3 24s linear infinite;
+    animation: nav3 24s linear infinite;
+    -webkit-animation-fill-mode: none;
   }
 
-  @-webkit-keyframes nav-3 {
-    0% {
-      background:rgba(255,255,255,.4);
-    }
-    33% {
-      background:rgba(0,0,0,.2);
-    }
+  .slider-4 .nav label {
+    -webkit-animation: nav4 32s linear infinite;
+    -moz-animation: nav4 32s linear infinite;
+    -o-animation: nav4 32s linear infinite;
+    -ie-animation: nav4 32s linear infinite;
+    animation: nav4 32s linear infinite;
+    -webkit-animation-fill-mode: none;
   }
 
   /* Pause on hover */
@@ -158,6 +195,10 @@
   .slider:hover .slides,
   .slider:hover .nav label {
     -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    -ie-animation-play-state:paused;
+    animation-play-state:paused;
   }
 
   .slider:hover .pause {
@@ -165,3 +206,160 @@
   }
 
 }
+
+/* Slides keyframes */
+
+@-webkit-keyframes slides3 {
+  0% { left: 0 }
+  31% { left: 0 }
+  33% { left: -100% }
+  64% { left: -100% }
+  66% { left: -200% }
+  98% { left: -200% }
+  100% { left: 0 }
+}
+
+@-moz-keyframes slides3 {
+  0% { left: 0 }
+  31% { left: 0 }
+  33% { left: -100% }
+  64% { left: -100% }
+  66% { left: -200% }
+  98% { left: -200% }
+  100% { left: 0 }
+}
+
+@-o-keyframes slides3 {
+  0% { left: 0 }
+  31% { left: 0 }
+  33% { left: -100% }
+  64% { left: -100% }
+  66% { left: -200% }
+  98% { left: -200% }
+  100% { left: 0 }
+}
+
+@keyframes slides3 {
+  0% { left: 0 }
+  31% { left: 0 }
+  33% { left: -100% }
+  64% { left: -100% }
+  66% { left: -200% }
+  98% { left: -200% }
+  100% { left: 0 }
+}
+
+@-webkit-keyframes slides4 {
+  0% { left: 0 }
+  24% { left: 0 }
+  25% { left: -100% }
+  49% { left: -100% }
+  50% { left: -200% }
+  74% { left: -200% }
+  75% { left: -300% }
+  99% { left: -300% }
+  100% { left: 0 }
+}
+
+@-moz-keyframes slides4 {
+  0% { left: 0 }
+  24% { left: 0 }
+  25% { left: -100% }
+  49% { left: -100% }
+  50% { left: -200% }
+  74% { left: -200% }
+  75% { left: -300% }
+  99% { left: -300% }
+  100% { left: 0 }
+}
+
+@-o-keyframes slides4 {
+  0% { left: 0 }
+  24% { left: 0 }
+  25% { left: -100% }
+  49% { left: -100% }
+  50% { left: -200% }
+  74% { left: -200% }
+  75% { left: -300% }
+  99% { left: -300% }
+  100% { left: 0 }
+}
+
+@keyframes slides4 {
+  0% { left: 0 }
+  24% { left: 0 }
+  25% { left: -100% }
+  49% { left: -100% }
+  50% { left: -200% }
+  74% { left: -200% }
+  75% { left: -300% }
+  99% { left: -300% }
+  100% { left: 0 }
+}
+
+/* Navigation keyframes */
+
+@-webkit-keyframes nav3 {
+  0% { background: rgba(255,255,255,.5) }
+  31% { background: rgba(255,255,255,.5) }
+  33% { background: rgba(0,0,0,.25) }
+  98% { background: rgba(0,0,0,.25) }
+  100% { background: rgba(255,255,255,.5) }
+}
+
+@-moz-keyframes nav3 {
+  0% { background: rgba(255,255,255,.5) }
+  31% { background: rgba(255,255,255,.5) }
+  33% { background: rgba(0,0,0,.25) }
+  98% { background: rgba(0,0,0,.25) }
+  100% { background: rgba(255,255,255,.5) }
+}
+
+@-o-keyframes nav3 {
+  0% { background: rgba(255,255,255,.5) }
+  31% { background: rgba(255,255,255,.5) }
+  33% { background: rgba(0,0,0,.25) }
+  98% { background: rgba(0,0,0,.25) }
+  100% { background: rgba(255,255,255,.5) }
+}
+
+@keyframes nav3 {
+  0% { background: rgba(255,255,255,.5) }
+  31% { background: rgba(255,255,255,.5) }
+  33% { background: rgba(0,0,0,.25) }
+  98% { background: rgba(0,0,0,.25) }
+  100% { background: rgba(255,255,255,.5) }
+}
+
+@-webkit-keyframes nav4 {
+  0% { background: rgba(255,255,255,.5) }
+  24% { background: rgba(255,255,255,.5) }
+  25% { background: rgba(0,0,0,.25) }
+  98% { background: rgba(0,0,0,.25) }
+  100% { background: rgba(255,255,255,.5) }
+}
+
+@-moz-keyframes nav4 {
+  0% { background: rgba(255,255,255,.5) }
+  24% { background: rgba(255,255,255,.5) }
+  25% { background: rgba(0,0,0,.25) }
+  98% { background: rgba(0,0,0,.25) }
+  100% { background: rgba(255,255,255,.5) }
+}
+
+@-o-keyframes nav4 {
+  0% { background: rgba(255,255,255,.5) }
+  24% { background: rgba(255,255,255,.5) }
+  25% { background: rgba(0,0,0,.25) }
+  98% { background: rgba(0,0,0,.25) }
+  100% { background: rgba(255,255,255,.5) }
+}
+
+@keyframes nav4 {
+  0% { background: rgba(255,255,255,.5) }
+  24% { background: rgba(255,255,255,.5) }
+  25% { background: rgba(0,0,0,.25) }
+  98% { background: rgba(0,0,0,.25) }
+  100% { background: rgba(255,255,255,.5) }
+}
+

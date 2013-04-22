@@ -1,0 +1,262 @@
+.slider {
+  position:relative;
+  overflow:hidden;
+}
+
+.slider input[name=slides] {
+  display:none !important;
+}
+
+@media screen and (min-width:961px) {
+
+  #cx-hero .slides {
+    height:420px;
+  }
+
+  /* Base slides */
+
+  .slider .slides {
+    position:relative;
+    -webkit-transition: left .5s linear;
+    -moz-transition: left .5s linear;
+    -o-transition: left .5s linear;
+    -ie-transition: left .5s linear;
+    transition: left .5s linear;
+  }
+
+  .slider .slide {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    box-sizing:border-box;
+  }
+
+  .slider .slide:nth-of-type(1) {
+    left:0;
+  }
+
+  .slider .slide:nth-of-type(2) {
+    left:100%;
+  }
+
+  .slider .slide:nth-of-type(3) {
+    left:200%;
+  }
+
+  /* Pause on hover */
+
+  .slider .pause {
+    content:"";
+    position:absolute;
+    display:none;
+    top:8px;
+    right:8px;
+    border-radius:6px;
+    background:url(/img/glyph/32-inv/pause.png) center center no-repeat rgba(0,0,0,.25);
+    width:32px;
+    height:32px;
+    z-index:10;
+  }
+
+  .slider:hover .slides,
+  .slider:hover .nav label {
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    -ie-animation-play-state:paused;
+    animation-play-state:paused;
+  }
+
+  .slider:hover .pause {
+    display:block;
+  }
+
+  /* Navigation */
+
+  .slider .nav {
+    position:absolute;
+    height:32px;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align:center;
+  }
+
+  .slider .nav label {
+    display:inline-block;
+    background:rgba(0,0,0,.2);
+    box-shadow:0 1px 1px rgba(0,0,0,.6) inset,
+               0 1px 1px rgba(255,255,255,.25);
+    width:12px;
+    height:12px;
+    margin:0 4px;
+    border-radius:32px;
+    cursor:pointer;
+  }
+
+  #slide-switch-1:checked ~ .slides {
+    left:0;
+  }
+
+  #slide-switch-2:checked ~ .slides {
+    left:-100%;
+  }
+
+  #slide-switch-3:checked ~ .slides {
+    left:-200%;
+  }
+
+  .slider input[name=slides]:checked ~ .slides,
+  .slider input[name=slides]:checked ~ .nav label {
+    -webkit-animation:none;
+    -moz-animation:none;
+    -o-animation:none;
+    -ie-animation:none;
+    animation:none;
+  }
+
+  .slider input[name=slides]:checked ~ .pause {
+    display:block;
+  }
+
+  #slide-switch-1:checked ~ .nav label:nth-of-type(1) {
+    background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.6);
+  }
+
+  #slide-switch-2:checked ~ .nav label:nth-of-type(2) {
+    background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.6);
+  }
+
+  #slide-switch-3:checked ~ .nav label:nth-of-type(3) {
+    background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.6);
+  }
+
+  /* Slides animation */
+
+  .slider-3 .slides {
+    -webkit-animation: slides-3 24s linear infinite;
+    -moz-animation: slides-3 24s linear infinite;
+    -o-animation: slides-3 24s linear infinite;
+    -ie-animation: slides-3 24s linear infinite;
+    animation: slides-3 24s linear infinite;
+  }
+
+  @-webkit-keyframes slides-3 {
+    0% {left:0;}
+    31% {left:0;}
+    33% {left:-100%;}
+    64% {left:-100%;}
+    66% {left:-200%;}
+    98% {left:-200%;}
+  }
+
+  @-moz-keyframes slides-3 {
+    0% {left:0;}
+    31% {left:0;}
+    33% {left:-100%;}
+    64% {left:-100%;}
+    66% {left:-200%;}
+    98% {left:-200%;}
+  }
+
+  @-o-keyframes slides-3 {
+    0% {left:0;}
+    31% {left:0;}
+    33% {left:-100%;}
+    64% {left:-100%;}
+    66% {left:-200%;}
+    98% {left:-200%;}
+  }
+
+  @-ie-keyframes slides-3 {
+    0% {left:0;}
+    31% {left:0;}
+    33% {left:-100%;}
+    64% {left:-100%;}
+    66% {left:-200%;}
+    98% {left:-200%;}
+  }
+
+  @keyframes slides-3 {
+    0% {left:0;}
+    31% {left:0;}
+    33% {left:-100%;}
+    64% {left:-100%;}
+    66% {left:-200%;}
+    98% {left:-200%;}
+  }
+
+  /* Navigation animation */
+
+  .slider .nav label:nth-of-type(1) {
+    -webkit-animation-delay:0s;
+    -moz-animation-delay:0s;
+    -o-animation-delay:0s;
+    -ie-animation-delay:0s;
+    animation-delay:0s;
+  }
+
+  .slider .nav label:nth-of-type(2) {
+    -webkit-animation-delay:8s;
+    -moz-animation-delay:8s;
+    -o-animation-delay:8s;
+    -ie-animation-delay:8s;
+    animation-delay:8s;
+  }
+
+  .slider .nav label:nth-of-type(3) {
+    -webkit-animation-delay:16s;
+    -moz-animation-delay:16s;
+    -o-animation-delay:16s;
+    -ie-animation-delay:16s;
+    animation-delay:16s;
+  }
+
+  .slider-3 .nav label {
+    -webkit-animation: nav-3 24s linear infinite;
+    -moz-animation: nav-3 24s linear infinite;
+    -o-animation: nav-3 24s linear infinite;
+    -ie-animation: nav-3 24s linear infinite;
+    animation: nav-3 24s linear infinite;
+  }
+
+  @-webkit-keyframes nav-3 {
+    0% { background:rgba(255,255,255,.4); }
+    31% { background:rgba(255,255,255,.4); }
+    33% { background:rgba(0,0,0,.2); }
+    98% { background:rgba(0,0,0,.2); }
+  }
+
+  @-moz-keyframes nav-3 {
+    0% { background:rgba(255,255,255,.4); }
+    31% { background:rgba(255,255,255,.4); }
+    33% { background:rgba(0,0,0,.2); }
+    98% { background:rgba(0,0,0,.2); }
+  }
+
+  @-o-keyframes nav-3 {
+    0% { background:rgba(255,255,255,.4); }
+    31% { background:rgba(255,255,255,.4); }
+    33% { background:rgba(0,0,0,.2); }
+    98% { background:rgba(0,0,0,.2); }
+  }
+
+  @-ie-keyframes nav-3 {
+    0% { background:rgba(255,255,255,.4); }
+    31% { background:rgba(255,255,255,.4); }
+    33% { background:rgba(0,0,0,.2); }
+    98% { background:rgba(0,0,0,.2); }
+  }
+
+  @keyframes nav-3 {
+    0% { background:rgba(255,255,255,.4); }
+    31% { background:rgba(255,255,255,.4); }
+    33% { background:rgba(0,0,0,.2); }
+    98% { background:rgba(0,0,0,.2); }
+  }
+
+}

@@ -4,36 +4,43 @@
 [#assign main]
 
 <div id="scala-hero"
-     class="panel hero content-box white alternate inverse">
+     class="panel hero content-box
+            white alternate inverse">
+  <h1>
+    Лидеры сделали свой выбор
+  </h1>
   <div class="row">
-    <div class="span-7">
-      <h1>
-        <span class="main">Some very awesome</span><br/>
-        <span class="sub">Marketing text</span>
-      </h1>
-      <p class="kicker">
-        Sublime text which will draw your attention. Period.
-      </p>
+    <div class="span-6">
       <p>
-        A bit of explanations, which are always necessary.
+        Ведущие мировые IT-компании используют Scala в качестве
+        серверной платформы для построения высоконагруженных
+        и отказоустойчивых сервисов.
       </p>
+      <p class="kicker">
+        Начните обучение сегодня.
+      </p>
+      <div class="centered">
+        <a href="/learning"
+           class="btn primary inverse">
+          <img class="glyph"
+               src="/img/glyph/32-inv/list.png"/>
+          <span>Выбрать программу обучения</span>
+        </a>
+      </div>
     </div>
-    <div class="span-5 centered large-screen">
-
+    <div class="span-6 centered">
+      <img src="${prefix}/270c5112-e985-4ff5-a95d-2b309bc0f7a8.png"/>
     </div>
   </div>
 </div>
 
-<h1 class="section-title white">A section</h1>
+<h1 class="section-title white">Краткий обзор</h1>
 <div class="letterbox">
   <div class="wrap content-box content-output rich-links round-bottom">
-    <h3>Howdy</h3>
-    <p>
-      Lorsque j'avais six ans, j'ai vu, une fois, une magnifique image
-      dans un livre sur la Forêt Vierge qui s'appelait “Histoires Vécues”.
-    </p>
+    [#include "overview.p.ftl"/]
   </div>
 </div>
+
 [/#assign]
 
 [#include "layout.ftl"/]
